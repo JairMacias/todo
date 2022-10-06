@@ -1,6 +1,6 @@
 <ul class="todo-list">
     <!-- {{todos|json}} -->
-  <app-todo-item *ngFor="let todo of todos"
-  [todo]="todo"></app-todo-item>
-    
+  <app-todo-item *ngFor="let todoItem of todosList | filtroTodo: currentFilter"
+  [todo]="todoItem"></app-todo-item>
+
 </ul>
